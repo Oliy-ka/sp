@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWLOOK</title>
+    <style>
+        body {
+            background-color: #865f4b;
+            font-family: Arial, sans-serif;
+            color: #fbfbf8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Верхній колонтитул */
+        header {
+            background-color: #fbfbf8;
+            color: #865f4b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Нижній колонтитул */
+        footer {
+            background-color: #fbfbf8;
+            color: #865f4b;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Додаємо, щоб footer був внизу */
+            width: 100%;
+        }
+
+        /* Контейнер для основного вмісту та бокової колонки */
+        .container {
+            display: flex;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        /* Бокова колонка */
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 250px;
+            color: #333;
+        }
+
+        /* Основний вміст */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            color: #fbfbf8;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #865f4b;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 2px solid #fbfbf8;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Адаптивність для мобільних пристроїв */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхній колонтитул -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Жінкам</a></li>
+                <li><a href="#">Чоловікам</a></li>
+                <li><a href="#">Для дому</a></li>
+            </ul>
+        </nav>
+        <h1>NEWLOOK</h1>
+        <h3>Ласкаво просимо у світ речей!</h3>
+    </header>
+
+    <!-- Контейнер для бокової колонки та основного вмісту -->
+    <div class="container">
+        <!-- Бокова колонка -->
+        <div class="sidebar">
+            <h2>Перелік категорій</h2>
+            <ul>
+                <li>Жінкам</li>
+                <li>Чоловікам</li>
+                <li>Для дому</li>
+            </ul>
+        </div>
+
+        <!-- Основний вміст -->
+        <div class="main-content">
+            <h2>Категорії</h2>
+            <table>
+                <tr>
+                    <th>Жінкам</th>
+                    <th>Чоловікам</th>
+                    <th>Для дому</th>
+                </tr>
+                <tr>
+                    <td>Одяг</td>
+                    <td>Одяг</td>
+                    <td>Кухня</td>
+                </tr>
+                <tr>
+                    <td>Взуття</td>
+                    <td>Взуття</td>
+                    <td>Вітальня</td>
+                </tr>
+            </table>
+
+            <h2>Фото наших образів!</h2>
+            <img src="https://i.pinimg.com/564x/b0/28/a9/b028a9dfd649ebad168c02a3e657fa5d.jpg" alt="SUMMER24">
+
+            <h2>Відео колекції</h2>
+            <iframe 
+            src="https://www.youtube.com/embed/Ej-sB7H-Qe8?si=DCrUXFCzRS7trzJj" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Нижній колонтитул -->
+    <footer>
+        <p>NEWLOOK &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
+
+
